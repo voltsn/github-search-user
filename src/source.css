@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg-base: #fefefe;
+    --color-bg-muted: #f6f8ff;
+    --color-button-base: #0079ff;
+    --color-text-accent: #0079ff;
+    --color-text-accent2: #2b3442;
+    --color-text-base: #4b6a9b;
+    --color-text-muted: #697c9a;
+  }
+
+  .dark {
+    --color-bg-base: #1e2a47;
+    --color-bg-muted: #141d2f;
+    --color-button-base: #0079ff;
+    --color-text-accent: #0079ff;
+    --color-text-accent2: #fffff;
+    --color-text-base: #ffffff;
+    --color-text-muted: #ffffff;
+  }
+}
