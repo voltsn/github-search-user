@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,5 +23,9 @@
     --color-text-accent-2: #fffff;
     --color-text-base: #ffffff;
     --color-text-muted: #ffffff;
+  }
+
+  html {
+    font-family: "Space Mono", monospace;
   }
 }
