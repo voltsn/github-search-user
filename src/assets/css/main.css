@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
 /*
 ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
@@ -422,7 +424,22 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+:root {
+  --color-bg-base: #fefefe;
+  --color-bg-muted: #f6f8ff;
+  --color-button-base: #0079ff;
+  --color-text-accent: #0079ff;
+  --color-text-accent-2: #2b3442;
+  --color-text-base: #4b6a9b;
+  --color-text-muted: #697c9a;
+  --color-text-neutral: #fffff;
+}
+
+html {
+  font-family: "Space Mono", monospace;
+}
+
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -472,7 +489,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -520,4 +537,97 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mr-1{
+  margin-right: 0.25rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.max-w-\[730px\]{
+  max-width: 730px;
+}
+
+.flex-1{
+  flex: 1 1 0%;
+}
+
+.flex-row{
+  flex-direction: row;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.gap-4{
+  gap: 1rem;
+}
+
+.border-2{
+  border-width: 2px;
+}
+
+.border-orange-700{
+  --tw-border-opacity: 1;
+  border-color: rgb(194 65 12 / var(--tw-border-opacity));
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.lowercase{
+  text-transform: lowercase;
+}
+
+.tracking-widest{
+  letter-spacing: 0.1em;
+}
+
+.tracking-\[\.75em\]{
+  letter-spacing: .75em;
+}
+
+.tracking-\[\.2em\]{
+  letter-spacing: .2em;
+}
+
+.tracking-\[\.21em\]{
+  letter-spacing: .21em;
+}
+
+.text-theme-muted{
+  color: var(--color-text-muted);
 }
