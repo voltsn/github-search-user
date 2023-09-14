@@ -1,9 +1,11 @@
 import Header from "./components/Header";
+import SearchBar from "./components/SearchBar";
 
 function App() {
   return (
-    <div className="flex-column mx-auto flex max-w-[730px] items-center justify-center border-2 border-orange-700">
+    <div className="mx-auto flex w-[90%] max-w-[730px] flex-col items-center justify-center border-2 border-orange-700">
       <Header />
+      <SearchBar />
     </div>
   );
 }

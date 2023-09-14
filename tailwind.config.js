@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.tsx"],
+  content: ["./src/**/*.tsx", "./*.html"],
   theme: {
     extend: {
       textColor: {
@@ -15,7 +15,7 @@ export default {
       backgroundColor: {
         theme: {
           base: "var(--color-bg-base)",
-          "button-base": "(var(--color-button-base)",
+          "button-base": "var(--color-button-base)",
           muted: "var(--color-bg-muted)",
         },
       },
